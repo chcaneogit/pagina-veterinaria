@@ -1,0 +1,61 @@
+body{
+  background-image: url(imagenes/fondo4.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.navbar{
+  background-color: #0fa774;
+}
+.container{
+  margin-top: 80px;
+  background-color: #48F8A990;
+  
+  padding: 20px;
+}
+.container:hover{
+  background-color: #C1F7DF90;
+}
+.navbar-collapse{
+  justify-content: space-between;
+}
+.carrusel{
+  padding: 40px 40px 80px 40px;
+  display: flex;
+  justify-content: center;
+}
+
+
+/*.h5{
+  color:black;
+  background-color: blanchedalmond;
+  display: inline-block;
+  border-radius: 20%;
+  opacity: 60%;
+}
+
+.p{
+  color:black;
+  background-color: blanchedalmond;
+  display: inline-block;
+  border-radius: 20%;
+  opacity: 60%;
+
+}*/
+.carousel-caption{
+  color:black;
+  background-color: blanchedalmond;
+  display: inline-block;
+  border-radius: 20%;
+  opacity: 60%;
+
+}
+
+.carousel-control-next-icon{background-image: url("icon/next.png"); }
+.carousel-control-prev-icon{background-image: url("icon/back.png"); }
+
+footer{
+  padding:80px;
+  background-color: antiquewhite;
+}
+
