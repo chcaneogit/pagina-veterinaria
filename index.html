@@ -9,6 +9,7 @@
 
 </head>
 <body>
+  <!-- Seccion barra de navegacion -->
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-veterinaria" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,7 +33,7 @@
           <li class="nav-item">
             <a class="nav-link" href="enlaces/enlace4.html">Articulos</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item"> 
             <a class="nav-link" href="enlaces/enlace5.html">Carrito</a>
           </li>
           <li class="nav-item">
@@ -46,10 +47,10 @@
           </ul>
         </div>
       </div>
-    </nav>
-            
- <!-- Modal de Inicio de Sesión -->
- <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  </nav>
+  <!-- FIn barra de navegacion       -->
+  <!-- Modal de Inicio de Sesión -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -71,19 +72,9 @@
       </div>
     </div>
   </div>
-</div>
-
-
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <script>
-    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-      return new bootstrap.Popover(popoverTriggerEl)
-    })
-  </script>
-
+  </div>
+  <!-- Fin modal -->
+  <!-- Tabla sencilla ejemplo -->
   <section class="container">
     <div class="row ">
       <div class="col-lg-6 col-md-12 border">
@@ -93,10 +84,11 @@
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque consectetur, quo tempora error culpa inventore assumenda eveniet ut facilis nemo placeat nisi. Quasi distinctio magni repellendus placeat nobis molestiae! Quo.
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae eum, laboriosam quaerat facere culpa error doloribus natus et illo nobis fugit neque at corrupti magni aspernatur placeat aperiam. Cumque, a.
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque recusandae expedita vero minus culpa vel dolorem reprehenderit suscipit asperiores soluta nemo ullam, maxime amet repellendus excepturi consequuntur explicabo officiis quisquam!
-        
       </div>
     </div>
   </section>
+  <!-- Fin tabla  -->
+  <!-- Seccion de carrusel -->
   <section class="carrusel container">
     <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
       <div class="carousel-indicators" style="filter: grayscale(0%) invert(100%);">
@@ -127,11 +119,25 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
-    </div>
+    </div> 
   </section>
-
+  <!-- Fin carrusel -->
+  <!-- Ejemplo popover -->
+  <section class="container">
+    <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
+          dasdsadas
+    </button>
+  </section> 
+  <!-- Fin popover  -->
+  <!-- Pie de pagina -->
   <footer class="container-fluid"id="contacto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi distinctio rerum assumenda, odio explicabo et quod minima. Consectetur veniam eaque aut ut quia corporis. Officiis voluptatem porro rem sequi. Nam.</footer>
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- script para habilitar los popover -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+      const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
+    });
+  </script>
 </body>
 </html>
