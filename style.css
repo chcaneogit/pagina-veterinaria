@@ -25,23 +25,6 @@ body{
   justify-content: center;
 }
 
-
-/*.h5{
-  color:black;
-  background-color: blanchedalmond;
-  display: inline-block;
-  border-radius: 20%;
-  opacity: 60%;
-}
-
-.p{
-  color:black;
-  background-color: blanchedalmond;
-  display: inline-block;
-  border-radius: 20%;
-  opacity: 60%;
-
-}*/
 .carousel-caption{
   color:black;
   background-color: blanchedalmond;
@@ -59,3 +42,6 @@ footer{
   background-color: antiquewhite;
 }
 
+.card{
+  align-content: center;
+}
