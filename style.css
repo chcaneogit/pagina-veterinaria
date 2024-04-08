@@ -1,15 +1,25 @@
+/* Estilo fondo */
 body{
   background-image: url(imagenes/fondo4.png);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
+.logo-veterinaria{
+  width: 50px;
+  height: auto;
+}
+/* estilos navbar */
 .navbar{
   background-color: #0fa774;
 }
+.navbar-collapse{
+  justify-content: space-between;
+}
+/* Estilos contenedores */
 .container{
-  margin-top: 80px;
-  background-color: #48F8A990;
+  margin-top: 75px;
+  background-color: #48F8A9;
   align-content: center;
   text-align: center;
   padding: 20px;
@@ -17,18 +27,11 @@ body{
 .container:hover{
   background-color: #C1F7DF90;
 }
-.navbar-collapse{
-  justify-content: space-between;
-}
+/* Estilos carrusel  */
 .carrusel{
   padding: 30px 30px 50px 30px;
   display: flex;
   justify-content: center;
-}
-
-.carousel-inner img{
-  height: 500px;
-  width: 300px;
 }
 .carousel-caption{
   color:black;
@@ -36,9 +39,8 @@ body{
   display: inline-block;
   border-radius: 20%;
   opacity: 60%;
-
 }
-
+/* Botones carrusel */
 .carousel-control-next-icon{background-image: url("icon/next.png"); }
 .carousel-control-prev-icon{background-image: url("icon/back.png"); }
 
@@ -46,13 +48,32 @@ footer{
   padding:80px;
   background-color: antiquewhite;
 }
+.servicios-img{
+  width: 100%;
+  height: 50%;
+}
+.servicios{
+  padding: 20px;
+}
+.caja{
+  width: 200px;
+  height: 200px;
+  background-color: black;
+}
+h1{
+  padding-bottom: 50px;
+}
 
-.logo-veterinaria{
-  width: 50px;
+.img-peluqueria{
+  width: 100%;
+  height: auto;
+}
+.img-peluqueria-pequeña{
+  width: 50%;
   height: auto;
 }
 
-.servicios{
-  width: 100%;
-  height: 50%;
+h2{
+  padding: 10%;
+  
 }
