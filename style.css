@@ -24,9 +24,9 @@ body{
   text-align: center;
   padding: 20px;
 }
-.container:hover{
+/* .container:hover{
   background-color: #C1F7DF90;
-}
+} */
 /* Estilos carrusel  */
 .carrusel{
   padding: 30px 30px 50px 30px;
@@ -49,8 +49,9 @@ footer{
   background-color: antiquewhite;
 }
 .servicios-img{
-  width: 100%;
-  height: 50%;
+  display: block; /* Para que los márgenes automáticos funcionen correctamente */
+  margin-left: auto;
+  margin-right: auto;
 }
 .servicios{
   padding: 20px;
@@ -64,16 +65,15 @@ h1{
   padding-bottom: 50px;
 }
 
-.img-peluqueria{
+.img-peluqueria,.img-peluqueria-pequeña{
   width: 100%;
   height: auto;
 }
-.img-peluqueria-pequeña{
-  width: 50%;
-  height: auto;
+
+.descripcion-servicio{
+  padding: 20px;
 }
 
-h2{
-  padding: 10%;
-  
+.titulo-servicios{
+  margin-top: 100px;
 }
