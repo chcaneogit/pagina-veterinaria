@@ -48,14 +48,18 @@ footer{
   padding:80px;
   background-color: antiquewhite;
 }
-.servicios-img{
-  display: block; /* Para que los márgenes automáticos funcionen correctamente */
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .servicios{
-  padding: 20px;
+  padding: 9%;
+  background-color: #54e9a6;
+  margin: auto;
+  border-radius: 20px;
 }
+.titulo{
+  padding-bottom: 3%;
+  
+}
+
 .caja{
   width: 200px;
   height: 200px;
