@@ -14,6 +14,7 @@ body{
   text-align: center;
   padding: 20px;
 }
+
 .container:hover{
   background-color: #C1F7DF90;
 }
@@ -55,4 +56,15 @@ footer{
 .servicios{
   width: 100%;
   height: 50%;
+}
+
+.col-md-6 {
+  scroll-margin-top: 100px; /* Ajusta según la altura del navbar */
+}
+
+.boton-flotante {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000; /* Asegura que el botón esté sobre otros elementos */
 }
