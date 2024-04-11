@@ -10,6 +10,7 @@ body{
   height: auto;
 }
 /* estilos navbar */
+
 .navbar{
   background-color: #0fa774;
 }
@@ -27,6 +28,7 @@ body{
 /* .container:hover{
   background-color: #C1F7DF90;
 } */
+
 /* Estilos carrusel  */
 .carrusel{
   padding: 30px 30px 50px 30px;
@@ -56,6 +58,7 @@ footer{
   border-radius: 20px;
 }
 .titulo{
+  padding-top: 3%;
   padding-bottom: 3%;
   
 }
@@ -69,15 +72,3 @@ h1{
   padding-bottom: 50px;
 }
 
-.img-peluqueria,.img-peluqueria-pequeña{
-  width: 100%;
-  height: auto;
-}
-
-.descripcion-servicio{
-  padding: 20px;
-}
-
-.titulo-servicios{
-  margin-top: 100px;
-}
