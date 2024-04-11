@@ -58,11 +58,11 @@
         <form>
           <div class="mb-3">
             <label for="username" class="form-label">Usuario</label>
-            <input type="text" class="form-control" id="username" placeholder="Ingrese su usuario">
+            <input type="text" class="form-control" id="username" placeholder="Ingrese su usuario" autocomplete="off">
           </div>
           <div class="mb-3">
             <label for="password" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña">
+            <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña" autocomplete="off">
           </div>
           <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
           <a href="enlace6.html" button type="submit" class="btn btn-primary">Registrase</button></a>
@@ -100,21 +100,21 @@
                   </div>
   
                   <div class="container-fluid mt-3">                                        
-                    <form action="procesar.php" class="was-validated  position-absolute top-50 start-50 translate-middle ">
+                    <form action="index.html" class="was-validated  position-absolute top-50 start-50 translate-middle ">
                       <!--En form action =" " se pone en donde se van a procesar los datos del registro/inicio de sesion-->
                       <div class="mb-3 mt-3">
                         <label for="nombre" class="form-label">Nombre:</label>
-                        <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" name="nombre" required>
+                        <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" name="nombre" required autocomplete="off">
                         <div class="invalid-feedback">Ingresa tu nombre</div>
                       </div>
                       <div class="mb-3">
                         <label for="correo" class="form-label">Correo electronico:</label>
-                        <input type="correo" class="form-control" id="correo" placeholder="Ingresa tu correo" name="correo" required>
+                        <input type="correo" class="form-control" id="correo" placeholder="Ingresa tu correo" name="correo" required autocomplete="off">
                         <div class="invalid-feedback">Ingresa tu correo </div>
                       </div>
                       <div class="mb-3">
                         <label for="pwd" class="form-label">Contraseña:</label>
-                        <input type="password" class="form-control" id="pwd" placeholder="Ingresa tu contraseña" name="pswd" required>
+                        <input type="password" class="form-control" id="pwd" placeholder="Ingresa tu contraseña" name="pswd" required autocomplete="off">
                         <div class="invalid-feedback">Ingresa tu contraseña </div>
                       </div>
                       
