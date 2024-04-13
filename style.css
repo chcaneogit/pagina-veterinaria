@@ -47,7 +47,7 @@ footer{
 
 /* Servicios */
 .servicios{
-  padding: 9%;
+  padding: 13vh;
   background-color: #54e9a6;
   margin: auto;
   border-radius: 20px;
@@ -63,7 +63,19 @@ footer{
   bottom: 2%; 
   background-color: #424443;
 }
-/* Productor */
+/* Articulos */
 #ArticuloGatoAdulto,#ArticuloGatoSano,#ArticuloPerros {
-  padding-top: 70px; /* Ajusta este valor según sea necesario para coincidir con la altura del navbar */
+  padding-top: 70px; 
+}
+.articulo{
+  height: 58vh;
+  overflow: auto;
+}
+.img-articulo{
+  height: 58vh;
+}
+.card-articulo{
+  white-space: pre;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
