@@ -44,60 +44,85 @@
       </div>
   </nav>
   <!-- FIn barra de navegacion-->
-  <!-- Modal de Inicio de Sesión -->
-  <div class="modal fade modal-right" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+ <!-- Modal de Inicio de Sesión -->
+ <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="loginModalLabel">Inicio de Sesión</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
+      
+      
       <div class="modal-body">
         <form>
-
-          <div class="mb-3">
-            <label for="username" class="form-label">Usuario</label>
-            <input type="text" class="form-control" id="username" placeholder="Ingrese su usuario">
+          <div class="col-md-8">
+            <label for="validationCustomUsername" class="form-label">Nombre Usuario</label>
+            <div class="input-group has-validation"> 
+              <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+              <div class="invalid-feedback">
+                Introduzca nombre de usuario.
+              </div>
+            </div>
           </div>
-          <div class="mb-3">
-            <label for="password" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña">
+          <div class="col-md-8">
+            <label for="validationCustomUsername" class="form-label">Contraseña</label>
+            <div class="input-group has-validation">
+              <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+              <div class="invalid-feedback">
+                Instroduzca la contraseña.
+              </div>
+            </div>
           </div>
+          <br>
           <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
-          <a href="registro.html" button type="submit" class="btn btn-primary">Registrarse</button></a>
+          <a href="registro.html" button type="submit" class="btn btn-primary">Registrase</button></a>
         </form>
       </div>
     </div>
   </div>
-  </div>
+ </div>
   <!-- Fin modal -->
 
 <!-- inicio Card de articulos-->
-<section class="row">
+<section class="row container-fluid">
   <!-- Articulo cuidados -->
-  <div class="card container col-lg-2 col-md-6" style="width: 18rem ;">
-    <img src="imagenes/gato1.jpg" class="img-fluid" alt="...">
+  <div class="card container col-md-6 col-lg-2" style="width: 18rem ">
+    <img src="imagenes/gato1.jpg" class="img-fluid" alt="imagen cuidados">
     <div class="card-body">
       <h5 class="card-title">Cuidados para tu gato adulto</h5>
-      <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, earum?</p>
+      <p class="card-text card-articulo">Para aquellos que tienen la 
+fortuna de compartir su 
+hogar con un gato adulto, el 
+cuidado va más allá de las 
+tareas diarias; es una expresión de amor y compromiso hacia estos maravillosos compañeros felinos.</p>
       <a href="#ArticuloGatoAdulto" class="btn btn-primary">Ir a cuidados</a>
     </div>
   </div>
   <!-- Articulo gato sano -->
-  <div class="card container col-lg-2 col-md-6" style="width: 18rem ;">
-    <img src="imagenes/gato2.jpg  " class="img-fluid" alt="...">
+  <div class="card container col-lg-2 col-md-6" style="width: 18rem ">
+    <img src="imagenes/gato2.jpg  " class="img-fluid" alt="imagen control">
     <div class="card-body">
       <h5 class="card-title">Control Sano</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <p class="card-text card-articulo">Como veterinario, es crucial 
+educar a los dueños de gatos 
+sobre la importancia de los 
+controles regulares para 
+garantizar la salud y 
+el bienestar de sus mascotas felinas.</p>
       <a href="#ArticuloGatoSano" class="btn btn-primary">Ir a gato sano</a>
     </div>
   </div>
   <!-- Articulo perros -->
-  <div class="card container col-lg-2 col-md-6" style="width: 18rem ;">
-    <img src="imagenes/gato3.jpg" class="img-fluid" alt="...">
+  <div class="card container col-lg-2 col-md-6" style="width: 18rem ">
+    <img src="imagenes/datosperro.jpeg" class="img-fluid" alt="imagen datos perros">
     <div class="card-body">
       <h5 class="card-title">Datos para tu perro</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <p class="card-text card-articulo"> Como veterinario 
+comprometido con el 
+bienestar de los perros y 
+sus dueños, es un honor 
+ofrecerte algunos consejos para una crianza responsable de estos adorables compañeros caninos.</p>
       <a href="#ArticuloPerros" class="btn btn-primary">Ir a Perros</a>
     </div>
   </div>
@@ -107,7 +132,7 @@
 <!--Articulos de interes-->
 <section class="container">
   <div class="row">
-    <div class="col-md-6" id="ArticuloGatoAdulto">
+    <div class="col-md-6 articulo" id="ArticuloGatoAdulto">
       <h2>Cuidados para tu gato adulto</h2>
       <p>
         Para aquellos que tienen la fortuna de compartir su hogar con un gato adulto, el cuidado va más allá de las tareas diarias; es una expresión de amor y compromiso hacia estos maravillosos compañeros felinos.
@@ -124,18 +149,18 @@
       </p>
     </div>
     <div class="col-md-6">
-      <img src="imagenes/gato1.jpg" class="img-fluid" alt="Imagen del artículo">
+      <img src="imagenes/gato1.jpg" class="img-fluid img-articulo" alt="Imagen del artículo cuidados">
     </div>
   </div>
 </section>
   <section>
     <div class="container mt-8">
     <div class="row">
-      <div class="col-md-6" id="ArticuloGatoSano"  style="overflow: auto">
+      <div class="col-md-6 articulo" id="ArticuloGatoSano"  style="overflow: auto">
         <h2>Controles al día</h2>
         <p>Como veterinario, es crucial educar a los dueños de gatos sobre la importancia de los controles regulares para garantizar la salud y el bienestar de sus mascotas felinas. Los gatos son criaturas curiosas y a menudo ocultan signos de enfermedad, lo que hace que los chequeos regulares sean aún más importantes. Aquí hay una visión general de los controles que recomiendo para mantener a los gatos al día y saludables:
 
-         <p> 1. Exámenes físicos regulares: Los exámenes físicos son fundamentales para detectar cualquier problema de salud temprano. Durante estos exámenes, evalúo el peso corporal, la condición de la piel y el pelaje, el estado de los ojos y oídos, así como la salud dental y la condición general del gato. También aprovecho para discutir la dieta, el ejercicio y el comportamiento del gato con el propietario.
+        <p> 1. Exámenes físicos regulares: Los exámenes físicos son fundamentales para detectar cualquier problema de salud temprano. Durante estos exámenes, evalúo el peso corporal, la condición de la piel y el pelaje, el estado de los ojos y oídos, así como la salud dental y la condición general del gato. También aprovecho para discutir la dieta, el ejercicio y el comportamiento del gato con el propietario.
         </p> 
         <p> 2. Vacunaciones: Las vacunas son una parte esencial del cuidado preventivo de los gatos. Recomiendo un plan de vacunación personalizado basado en el estilo de vida del gato y los riesgos específicos a los que está expuesto. Las vacunas comunes para gatos incluyen las vacunas contra la rabia, la panleucopenia felina, el calicivirus felino y el herpesvirus felino.
         </p>  
@@ -150,15 +175,15 @@
         </p>
       </div>
       <div class="col-md-6">
-        <img src="imagenes/gato2.jpg" class="img-fluid" alt="Imagen del artículo 1">
-        <img src="imagenes/gato4.jpg" class="img-fluid" alt="Imagen del artículo 2">
+        <img src="imagenes/gato2.jpg" class="img-fluid img-articulo" alt="Imagen del artículo control">
+        
       </div>
     </div>
   </section>
     <section>
       <div class="container mt-8">
       <div class="row">
-        <div class="col-md-6" id="ArticuloPerros">
+        <div class="col-md-6 articulo" id="ArticuloPerros">
           <h2>Datos que debes saber sobre tu perro</h2>
           <p>
             Como veterinario comprometido con el bienestar de los perros y sus dueños, es un honor ofrecerte algunos consejos para una crianza responsable de estos adorables compañeros caninos.
@@ -179,10 +204,10 @@
           </p>
         </div>
         <div class="col-md-6">
-          <img src="imagenes/gato3.jpg" class="img-fluid" alt="Imagen del artículo">
+          <img src="imagenes/datosperro.jpeg" class="img-fluid img-articulo" alt="Imagen del artículo perros">
         </div>
       </div>
-    </section>
+    </section> 
 <!--Fin Articulos de interes-->
 
 <!--Popover -->

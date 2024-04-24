@@ -45,42 +45,63 @@
       </div>
   </nav>
   <!-- Fin barra de navegacion-->
-  <!-- Modal de Inicio de Sesión -->
-  <div class="modal fade modal-right" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+ <!-- Modal de Inicio de Sesión -->
+ <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="loginModalLabel">Inicio de Sesión</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
+      
+      
       <div class="modal-body">
         <form>
-
-          <div class="mb-3">
-            <label for="username" class="form-label">Usuario</label>
-            <input type="text" class="form-control" id="username" placeholder="Ingrese su usuario">
+          <div class="col-md-8">
+            <label for="validationCustomUsername" class="form-label">Nombre Usuario</label>
+            <div class="input-group has-validation"> 
+              <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+              <div class="invalid-feedback">
+                Introduzca nombre de usuario.
+              </div>
+            </div>
           </div>
-          <div class="mb-3">
-            <label for="password" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña">
+          <div class="col-md-8">
+            <label for="validationCustomUsername" class="form-label">Contraseña</label>
+            <div class="input-group has-validation">
+              <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+              <div class="invalid-feedback">
+                Instroduzca la contraseña.
+              </div>
+            </div>
           </div>
+          <br>
           <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
-          <a href="registro.html" button type="submit" class="btn btn-primary">Registrarse</button></a>
+          <a href="registro.html" button type="submit" class="btn btn-primary">Registrase</button></a>
         </form>
       </div>
     </div>
   </div>
-  </div>
+ </div>
   <!-- Fin modal -->
+
+  <!--Inicio banner_productos-->
+
+  <section class="container">
+    <img class="img-fluid" src="imagenes/banner_productos1.png" alt="banner_productos">
+  </section>
+
+  <!--Fin banner_productos-->
+
   <!--Inicio card productos-->
-  <section class="container-fluid" id="Productos">
+  <section class="container" id="Productos">
   <section class="row" id="Alimentos">
     <div class="card container col-lg-2 col-md-6" style="width: 15rem ;">
       <img src="imagenes/comida1.png" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Comida 1</h5>
         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, adipisci!</p>
-        <a href="enlace5.html" class="btn btn-primary">Añadir al carrito</a>
+        <a href="#" class="btn btn-primary">Añadir al carrito</a>
       </div>
     </div>
 
@@ -89,7 +110,7 @@
       <div class="card-body">
         <h5 class="card-title">Comida 2</h5>
         <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, unde.</p>
-        <a href="enlace5.html" class="btn btn-primary">Añadir al carrito</a>
+        <a href="#" class="btn btn-primary">Añadir al carrito</a>
       </div>
     </div>
 
@@ -98,7 +119,7 @@
       <div class="card-body">
         <h5 class="card-title">Comida 3</h5>
         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, maiores..</p>
-        <a href="enlace5.html" class="btn btn-primary">Añadir al carrito</a>
+        <a href="#" class="btn btn-primary">Añadir al carrito</a>
       </div>
     </div>
 
@@ -107,7 +128,7 @@
       <div class="card-body">
         <h5 class="card-title">Comida 4</h5>
         <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, molestiae!</p>
-        <a href="enlace5.html" class="btn btn-primary">Añadir al carrito</a>
+        <a href="#" class="btn btn-primary">Añadir al carrito</a>
       </div>
     </div>
   </section>
@@ -118,7 +139,7 @@
       <div class="card-body">
         <h5 class="card-title">Arena 1</h5>
         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, adipisci!</p>
-        <a href="enlace5.html" class="btn btn-primary">Añadir al carrito</a>
+        <a href="#" class="btn btn-primary">Añadir al carrito</a>
       </div>
     </div>
 
@@ -127,7 +148,7 @@
       <div class="card-body">
         <h5 class="card-title">Arena 2</h5>
         <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, unde.</p>
-        <a href="enlace5.html" class="btn btn-primary">Añadir al carrito</a>
+        <a href="#" class="btn btn-primary">Añadir al carrito</a>
       </div>
     </div>
 
@@ -136,7 +157,7 @@
       <div class="card-body">
         <h5 class="card-title">Arena 3</h5>
         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, maiores..</p>
-        <a href="enlace5.html" class="btn btn-primary">Añadir al carrito</a>
+        <a href="#" class="btn btn-primary">Añadir al carrito</a>
       </div>
     </div>
 
@@ -145,7 +166,7 @@
       <div class="card-body">
         <h5 class="card-title">Arena 4</h5>
         <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, molestiae!</p>
-        <a href="enlace5.html" class="btn btn-primary">Añadir al carrito</a>
+        <a href="#" class="btn btn-primary">Añadir al carrito</a>
       </div>
     </div>
   </section>

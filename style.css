@@ -10,7 +10,6 @@ body{
   height: auto;
 }
 /* estilos navbar */
-
 .navbar{
   background-color: #0fa774;
 }
@@ -31,19 +30,6 @@ body{
   align-items: center;
 }
 
-/* Estilos carrusel  */
-.carrusel{
-  padding: 30px 30px 50px 30px;
-  display: flex;
-  justify-content: center;
-}
-.carousel-caption{
-  color:black;
-  background-color: blanchedalmond;
-  display: inline-block;
-  border-radius: 20%;
-  opacity: 60%;
-}
 /* Botones carrusel */
 .carousel-control-next-icon{background-image: url("icon/next.png"); }
 .carousel-control-prev-icon{background-image: url("icon/back.png"); }
@@ -61,7 +47,7 @@ footer{
 
 /* Servicios */
 .servicios{
-  padding: 9%;
+  padding: 13vh;
   background-color: #54e9a6;
   margin: auto;
   border-radius: 20px;
@@ -73,7 +59,23 @@ footer{
 /* Popopover */
 .ubi-popover {
   position: fixed;
-  left: 20px; 
-  bottom: 20px; 
+  left: auto; 
+  bottom: 2%; 
   background-color: #424443;
+}
+/* Articulos */
+#ArticuloGatoAdulto,#ArticuloGatoSano,#ArticuloPerros {
+  padding-top: 70px; 
+}
+.articulo{
+  height: 58vh;
+  overflow: auto;
+}
+.img-articulo{
+  height: 58vh;
+}
+.card-articulo{
+  white-space: pre;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
