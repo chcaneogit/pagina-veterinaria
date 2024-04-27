@@ -8,6 +8,7 @@
   <link href="style.css" rel="stylesheet">
   <link rel="icon" href="imagenes/logo-veterinaria.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="main.js"></script>
 
 </head>
 <body>
@@ -88,7 +89,7 @@
   <!-- Inicio sección de registro -->
   <section class="container">
     <div class="container row mx-auto registro">
-      <div class="col-md-6 col-lg-6">
+      <div class="col-md-3 col-lg-3">
         <div class="text-center">
           <h3>Registrar Cuenta</h3>
           <img src="imagenes/logo-veterinaria.png"
@@ -96,17 +97,31 @@
           <h4 class="mt-1 mb-5 pb-1">Proyecto Veterinaria</h4>
         </div>
       </div>
-        <div class="col-md-4 col-lg-4">
+        <div class="col-md-3 col-lg-3">
           <form action="#" class="was-validated">
             <div class="mb-3 mt-3">
-              <label for="nombre" class="form-label">Nombre:</label>
-              <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" name="nombre" required autocomplete="off">
-              <div class="invalid-feedback">Ingresa tu nombre</div>
+              <label for="nombre" class="form-label">Nombres:</label>
+              <input type="text" class="form-control" id="nombre" placeholder="Ingresa tus nombres" name="nombre" required autocomplete="off" oninput="validarNombre('nombre')">
+              <span id="nombre-error"></span>
             </div>
             <div class="mb-3">
-              <label for="correo" class="form-label">Correo electronico:</label>
-              <input type="email" class="form-control" id="correo" placeholder="Ingresa tu correo" name="correo" required autocomplete="off">
+              <label for="correo" class="form-label">Fecha de nacimiento:</label>
+              <input type="date" class="form-control" id="nacimiento" placeholder="nacimiento" name="correo" required autocomplete="off">
               <div class="invalid-feedback">Ingresa tu correo </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3 col-lg-3">
+          <form action="#">
+            <div class="mb-3 mt-3">
+              <label for="apellido" class="form-label">Apellidos:</label>
+              <input type="text" class="form-control" id="apellido" placeholder="Ingresa tus apellidos" name="apellido" required autocomplete="off">
+              <div class="invalid-feedback">Ingresa tus apellidos</div>
+            </div>
+            <div class="mb-3">
+              <label for="correo" class="form-label">Número celular:</label>
+              <input type="email" class="form-control" id="correo" placeholder="Ingresa tu celular" name="celular" required autocomplete="off">
+              <div class="invalid-feedback">Ingresa tu num. celular </div>
             </div>
             <div class="mb-3">
               <label for="pwd" class="form-label">Contraseña:</label>
@@ -115,7 +130,21 @@
             </div>
             <button type="submit" class="btn btn-primary">Crear cuenta</button>
           </form>
-      </div>
+        </div>
+        <div class="col-md-3 col-lg-3">
+          <form action="#">
+            <div class="mb-3 mt-3">
+              <label for="rut" class="form-label">RUT:</label>
+              <input type="text" class="form-control" id="rut" placeholder="Ingresa tu RUT" name="rut" required autocomplete="off">
+              <div class="invalid-feedback">Ingresa tu RUT</div>
+            </div>
+            <div class="mb-3">
+              <label for="correo" class="form-label">Direccion:</label>
+              <input type="email" class="form-control" id="direccion" placeholder="Ingresa tu direccion" name="correo" required autocomplete="off">
+              <div class="invalid-feedback">Ingresa tu direccion </div>
+            </div>
+          </form>
+        </div>
     </div>
   </section>
   <!-- Fin de sección de registro -->
