@@ -38,6 +38,8 @@ body{
 footer{
   padding:20px;
   background-color: antiquewhite;
+  position: fixed;
+  bottom: 0;
 }
 .bi{
   font-size: 20px;

@@ -57,7 +57,7 @@
       
       
       <div class="modal-body">
-        <form>
+        <form class="was-validated">
           <div class="col-md-8">
             <label for="validationCustomUsername" class="form-label">Nombre Usuario</label>
             <div class="input-group has-validation"> 
@@ -105,9 +105,14 @@
               <span id="nombre-error"></span>
             </div>
             <div class="mb-3">
+              <label for="correo" class="form-label">Correo:</label>
+              <input type="mail" class="form-control" id="correo" placeholder="Ingrese su correo" name="correo" required autocomplete="off" oninput="validarNombre('correo')">
+              <span id="correo-error"></span>
+            </div>
+            <div class="mb-3">
               <label for="correo" class="form-label">Fecha de nacimiento:</label>
-              <input type="date" class="form-control" id="nacimiento" placeholder="nacimiento" name="correo" required autocomplete="off">
-              <div class="invalid-feedback">Ingresa tu correo </div>
+              <input type="date" class="form-control" id="nacimiento" placeholder="nacimiento" name="nacimiento" required autocomplete="off" oninput="validarEdad('nacimiento')">
+              <span id="nacimiento-error"></span>
             </div>
           </form>
         </div>
@@ -115,18 +120,18 @@
           <form action="#">
             <div class="mb-3 mt-3">
               <label for="apellido" class="form-label">Apellidos:</label>
-              <input type="text" class="form-control" id="apellido" placeholder="Ingresa tus apellidos" name="apellido" required autocomplete="off">
-              <div class="invalid-feedback">Ingresa tus apellidos</div>
+              <input type="text" class="form-control" id="apellido" placeholder="Ingresa tus apellidos" name="apellido" required autocomplete="off" oninput="validarNombre('apellido')">
+              <span id="apellido-error"></span>
             </div>
             <div class="mb-3">
               <label for="correo" class="form-label">Número celular:</label>
               <input type="email" class="form-control" id="correo" placeholder="Ingresa tu celular" name="celular" required autocomplete="off">
-              <div class="invalid-feedback">Ingresa tu num. celular </div>
+              <span id="nombre-error"></span>
             </div>
             <div class="mb-3">
               <label for="pwd" class="form-label">Contraseña:</label>
               <input type="password" class="form-control" id="pwd" placeholder="Ingresa tu contraseña" name="pswd" required autocomplete="off">
-              <div class="invalid-feedback">Ingresa tu contraseña </div>
+              <span id="nombre-error"></span>
             </div>
             <button type="submit" class="btn btn-primary">Crear cuenta</button>
           </form>
@@ -136,12 +141,12 @@
             <div class="mb-3 mt-3">
               <label for="rut" class="form-label">RUT:</label>
               <input type="text" class="form-control" id="rut" placeholder="Ingresa tu RUT" name="rut" required autocomplete="off">
-              <div class="invalid-feedback">Ingresa tu RUT</div>
+              <span id="nombre-error"></span>
             </div>
             <div class="mb-3">
               <label for="correo" class="form-label">Direccion:</label>
               <input type="email" class="form-control" id="direccion" placeholder="Ingresa tu direccion" name="correo" required autocomplete="off">
-              <div class="invalid-feedback">Ingresa tu direccion </div>
+              <span id="nombre-error"></span>
             </div>
           </form>
         </div>
@@ -153,7 +158,7 @@
     Importante
   </button>
   <!-- Fin popover  -->
-  <footer class="container-fluid"">
+  <footer class="container-fluid">
     <img class="logo-veterinaria img-thumbail" src="imagenes/logo-veterinaria.png">
     <a href="https://www.facebook.com"><i class="bi bi-facebook"></i></a>
     <a href="https://www.instagram.com"><i class="bi bi-instagram"></i></a>
