@@ -87,7 +87,8 @@
   <!-- Fin modal -->
 
   <!-- Inicio sección de registro -->
-  <section class="container">
+  <section class="container registro main-content">
+    <form action="#" class="was-validated">
     <div class="container row mx-auto registro">
       <div class="col-md-3 col-lg-3">
         <div class="text-center">
@@ -97,16 +98,17 @@
           <h4 class="mt-1 mb-5 pb-1">Proyecto Veterinaria</h4>
         </div>
       </div>
+      
         <div class="col-md-3 col-lg-3">
-          <form action="#" class="was-validated">
+          
             <div class="mb-3 mt-3">
               <label for="nombre" class="form-label">Nombres:</label>
-              <input type="text" class="form-control" id="nombre" placeholder="Ingresa tus nombres" name="nombre" required autocomplete="off" oninput="validarNombre('nombre')">
+              <input type="text" class="form-control" id="nombre" placeholder="Ingresa tus nombres" name="nombre" required autocomplete="off" oninput="validarTexto('nombre')">
               <span id="nombre-error"></span>
             </div>
             <div class="mb-3">
               <label for="correo" class="form-label">Correo:</label>
-              <input type="mail" class="form-control" id="correo" placeholder="Ingrese su correo" name="correo" required autocomplete="off" oninput="validarNombre('correo')">
+              <input type="mail" class="form-control" id="correo" placeholder="Ingrese su correo" name="correo" required autocomplete="off" oninput="validarTexto('correo')">
               <span id="correo-error"></span>
             </div>
             <div class="mb-3">
@@ -114,42 +116,47 @@
               <input type="date" class="form-control" id="nacimiento" placeholder="nacimiento" name="nacimiento" required autocomplete="off" oninput="validarEdad('nacimiento')">
               <span id="nacimiento-error"></span>
             </div>
-          </form>
+          
         </div>
         <div class="col-md-3 col-lg-3">
-          <form action="#">
+          
             <div class="mb-3 mt-3">
               <label for="apellido" class="form-label">Apellidos:</label>
-              <input type="text" class="form-control" id="apellido" placeholder="Ingresa tus apellidos" name="apellido" required autocomplete="off" oninput="validarNombre('apellido')">
+              <input type="text" class="form-control" id="apellido" placeholder="Ingresa tus apellidos" name="apellido" required autocomplete="off" oninput="validarTexto('apellido')">
               <span id="apellido-error"></span>
             </div>
             <div class="mb-3">
-              <label for="correo" class="form-label">Número celular:</label>
-              <input type="email" class="form-control" id="correo" placeholder="Ingresa tu celular" name="celular" required autocomplete="off">
-              <span id="nombre-error"></span>
+              <label for="celular" class="form-label">Número celular:</label>
+              <div class="input-group">
+                <span class="input-group-text">+569</span>
+                <input type="text" class="form-control" id="celular" placeholder="Ingresa tu celular" name="celular" required autocomplete="off" oninput="validarCelular('celular')">
+              </div>
+              
+              <span id="celular-error"></span>
             </div>
             <div class="mb-3">
               <label for="pwd" class="form-label">Contraseña:</label>
-              <input type="password" class="form-control" id="pwd" placeholder="Ingresa tu contraseña" name="pswd" required autocomplete="off">
-              <span id="nombre-error"></span>
+              <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña" name="pswd" required autocomplete="off" oninput="validarTexto('password')">
+              <span id="password-error"></span>
             </div>
-            <button type="submit" class="btn btn-primary">Crear cuenta</button>
-          </form>
+            <button type="submit" class="btn btn-primary"id="botonCrearCuenta"onclick="validarFormulario()">Crear cuenta</button>
+          
         </div>
         <div class="col-md-3 col-lg-3">
-          <form action="#">
+          
             <div class="mb-3 mt-3">
               <label for="rut" class="form-label">RUT:</label>
-              <input type="text" class="form-control" id="rut" placeholder="Ingresa tu RUT" name="rut" required autocomplete="off">
-              <span id="nombre-error"></span>
+              <input type="text" class="form-control" id="rut" placeholder="Ingresa tu RUT" name="rut" required autocomplete="off" oninput="validarTexto('rut')">
+              <span id="rut-error"></span>
             </div>
             <div class="mb-3">
               <label for="correo" class="form-label">Direccion:</label>
-              <input type="email" class="form-control" id="direccion" placeholder="Ingresa tu direccion" name="correo" required autocomplete="off">
-              <span id="nombre-error"></span>
+              <input type="text" class="form-control" id="direccion" placeholder="Ingresa tu direccion" name="correo" required autocomplete="off" oninput="validarTexto('direccion')">
+              <span id="direccion-error"></span>
             </div>
-          </form>
+          
         </div>
+      </form>
     </div>
   </section>
   <!-- Fin de sección de registro -->
@@ -158,7 +165,7 @@
     Importante
   </button>
   <!-- Fin popover  -->
-  <footer class="container-fluid">
+  <footer class="container-fluid fixed-buttom">
     <img class="logo-veterinaria img-thumbail" src="imagenes/logo-veterinaria.png">
     <a href="https://www.facebook.com"><i class="bi bi-facebook"></i></a>
     <a href="https://www.instagram.com"><i class="bi bi-instagram"></i></a>

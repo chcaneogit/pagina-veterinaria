@@ -38,7 +38,6 @@ body{
 footer{
   padding:20px;
   background-color: antiquewhite;
-  position: fixed;
   bottom: 0;
 }
 .bi{
@@ -80,4 +79,8 @@ footer{
   white-space: pre;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+span{
+  color: #aa0101;
+  font-size: 80%;
 }
