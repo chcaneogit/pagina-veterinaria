@@ -37,8 +37,9 @@ body{
 /* Pie de pagina */
 footer{
   padding:20px;
-  background-color: antiquewhite;
+  background-color: #d6f7e5;
   bottom: 0;
+  position: fixed;
 }
 .bi{
   font-size: 20px;

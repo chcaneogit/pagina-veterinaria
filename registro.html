@@ -140,21 +140,24 @@
               <span id="password-error"></span>
             </div>
             <button type="submit" class="btn btn-primary"id="botonCrearCuenta"onclick="validarFormulario()">Crear cuenta</button>
-          
         </div>
         <div class="col-md-3 col-lg-3">
-          
-            <div class="mb-3 mt-3">
-              <label for="rut" class="form-label">RUT:</label>
-              <input type="text" class="form-control" id="rut" placeholder="Ingresa tu RUT" name="rut" required autocomplete="off" oninput="validarTexto('rut')">
-              <span id="rut-error"></span>
+          <div class="mb-3 mt-3">
+            <label for="rut" class="form-label">RUT:</label>
+            <div class="input-group">
+                <input type="text" class="form-control" id="rut" placeholder="123456789" name="rut_primeros_9" required autocomplete="off" oninput="validarRutSinDv('rut')"">
+                <span class="input-group-text">-</span>
+                <div class="input-group" style="width: 30%;"> 
+                <input type="text" class="form-control" id="digito_verificador_numero" placeholder="dv" name="digito_verificador_numero" required autocomplete="off" oninput="validarDigitoVerificador()">
+                </div>
             </div>
+            <span id="rut-error"></span>
+        </div>
             <div class="mb-3">
               <label for="correo" class="form-label">Direccion:</label>
               <input type="text" class="form-control" id="direccion" placeholder="Ingresa tu direccion" name="correo" required autocomplete="off" oninput="validarTexto('direccion')">
               <span id="direccion-error"></span>
             </div>
-          
         </div>
       </form>
     </div>

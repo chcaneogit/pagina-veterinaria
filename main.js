@@ -65,6 +65,35 @@ function validarCelular(idCampo) {
     
 }
 
+function validarRutSinDv(idCampo) {
+    let rutInput = document.getElementById(idCampo);
+    let rut = rutInput.value;
+
+    // Verificar si el valor ingresado es numérico
+    if (!/^\d+$/.test(rut)) {
+        let rutError = document.getElementById(idCampo + "-error");
+        let formulario = rutInput.closest('form');
+        rutError.innerText = "Por favor, ingresa tu "+ idCampo+" sin puntos";
+        formulario.classList.remove('was-validated');
+        return false;
+    }
+
+    let numero = parseInt(rut);
+    let rutError = document.getElementById(idCampo + "-error");
+    let formulario = rutInput.closest('form');
+    if (numero < 999999 || numero > 100000000) {
+        rutError.innerText = "Por favor, ingresa tu "+ idCampo;
+        formulario.classList.remove('was-validated');
+        return false;
+        
+    } else {
+        rutError.innerText = "";
+        formulario.classList.add('was-validated');
+        return true;
+    }
+    
+}
+
 function validarFormulario() {
     // Llama funciones de validación individualmente
     const nombreValido = validarTexto('nombre');
