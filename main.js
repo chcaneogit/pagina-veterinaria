@@ -4,7 +4,7 @@ function validarTexto(idCampo) {
     let nombreError = document.getElementById(idCampo + "-error");
     let formulario = nombreInput.closest('form');
 
-    if (nombre.length <=3) {
+    if (nombre.length <=6) {
         nombreError.innerText = "Por favor, ingresa tu "+ idCampo;
         formulario.classList.remove('was-validated');
         return false;
@@ -20,20 +20,29 @@ function validarEdad(idCampo) {
     let fechaNacimiento = new Date(fechaNacimientoInput.value);
     let hoy = new Date();
     let nombreError = document.getElementById(idCampo + "-error");
-    let segundos = hoy - fechaNacimiento;
-    let meses = segundos / (1000 * 60 * 60 * 24 * 30);
-    let edad = Math.trunc(meses/12);
     let formulario = fechaNacimientoInput.closest('form');
 
-    if (edad <=18) {
+    // Calcular la edad en años
+    let edad = hoy.getFullYear() - fechaNacimiento.getFullYear();
+    let mesActual = hoy.getMonth();
+    let mesNacimiento = fechaNacimiento.getMonth();
+
+    // Ajustar la edad si aún no se ha alcanzado el mes de nacimiento
+    if (mesActual < mesNacimiento || (mesActual === mesNacimiento && hoy.getDate() < fechaNacimiento.getDate())) {
+        edad=edad-1;
+    }
+
+    if (edad < 18) {
         nombreError.innerText = "Debe ser mayor a 18 años";
         formulario.classList.remove('was-validated');
+        console.log(edad)
         return false;
+        
     } else {
         nombreError.innerText = "";
         formulario.classList.add('was-validated');
         return true;
-    } 
+    }
 }
 
 function validarCelular(idCampo) {
@@ -73,7 +82,7 @@ function validarRutSinDv(idCampo) {
     if (!/^\d+$/.test(rut)) {
         let rutError = document.getElementById(idCampo + "-error");
         let formulario = rutInput.closest('form');
-        rutError.innerText = "Por favor, ingresa tu "+ idCampo+" sin puntos";
+        rutError.innerText = "Por favor, ingresa tu " + idCampo + " sin puntos";
         formulario.classList.remove('was-validated');
         return false;
     }
@@ -81,17 +90,54 @@ function validarRutSinDv(idCampo) {
     let numero = parseInt(rut);
     let rutError = document.getElementById(idCampo + "-error");
     let formulario = rutInput.closest('form');
+
+    //Verificar el largo del rut sin puntos, guion y dígito verificador
     if (numero < 999999 || numero > 100000000) {
-        rutError.innerText = "Por favor, ingresa tu "+ idCampo;
+        rutError.innerText = "Por favor, ingresa tu " + idCampo;
         formulario.classList.remove('was-validated');
         return false;
-        
+
     } else {
         rutError.innerText = "";
         formulario.classList.add('was-validated');
         return true;
     }
-    
+}
+
+function validarDigitoVerificador(rutId, dvId) {
+    // Obtener el valor del RUT y del dígito verificador
+    var rut = document.getElementById(rutId).value;
+    var dv = document.getElementById(dvId).value.toUpperCase(); // Convertir a mayúsculas para manejar K
+    var dvError = document.getElementById(rutId + "-error"); 
+    var formulario = document.getElementById(rutId).closest('form'); 
+    // Calcular el dígito verificador esperado
+    var suma = 0;
+    var multiplo = 2;
+
+    // Recorrer el cuerpo del RUT de derecha a izquierda
+    for (var i = rut.length - 1; i >= 0; i--) {
+        suma += parseInt(rut.charAt(i)) * multiplo;
+
+        if (multiplo < 7) multiplo += 1;
+        else multiplo = 2;
+    }
+
+    // Calcular el dígito verificador esperado
+    var dvEsperado = 11 - (suma % 11);
+
+    // Convertir el dígito verificador a string
+    dvEsperado = (dvEsperado === 11) ? "0" : ((dvEsperado === 10) ? "K" : dvEsperado.toString());
+
+    // Comparar el dígito verificador ingresado con el esperado
+    if (dvEsperado !== dv) {
+        dvError.innerText = "El RUT no es válido"; // Asignar mensaje de error al span de error
+        formulario.classList.remove('was-validated'); // Remover la clase 'was-validated' del formulario
+        return false;
+    } else {
+        dvError.innerText = ""; // Si no hay error, eliminar el mensaje de error
+        formulario.classList.add('was-validated');
+        return true;
+    }
 }
 
 function validarFormulario() {
@@ -116,5 +162,33 @@ function validarFormulario() {
     return true;
 }
 
-
-
+$(document).ready(function(){
+    $("#verMas1").click(function(){
+      $(".articuloOculto1").toggle(); // Alternar la visibilidad del párrafo oculto
+      if ($(this).text() === "Ver más") {
+        $(this).text("Ver menos");
+      } else {
+        $(this).text("Ver más");
+      }
+    });
+});
+$(document).ready(function(){
+    $("#verMas2").click(function(){
+      $(".articuloOculto2").toggle(); // Alternar la visibilidad del párrafo oculto
+      if ($(this).text() === "Ver más") {
+        $(this).text("Ver menos");
+      } else {
+        $(this).text("Ver más");
+      }
+    });
+});
+$(document).ready(function(){
+    $("#verMas3").click(function(){
+      $(".articuloOculto3").toggle(); // Alternar la visibilidad del párrafo oculto
+      if ($(this).text() === "Ver más") {
+        $(this).text("Ver menos");
+      } else {
+        $(this).text("Ver más");
+      }
+    });
+});

@@ -18,7 +18,8 @@ body{
 }
 /* Estilos contenedores */
 .container{
-  margin-top: 75px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   background-color: #48F8A9;
   align-content: center;
   text-align: center;
@@ -36,10 +37,8 @@ body{
 
 /* Pie de pagina */
 footer{
-  padding:20px;
+  padding:1%;
   background-color: #d6f7e5;
-  bottom: 0;
-  position: fixed;
 }
 .bi{
   font-size: 20px;
@@ -66,14 +65,15 @@ footer{
   background-color: #424443;
 }
 /* Articulos */
-#ArticuloGatoAdulto,#ArticuloGatoSano,#ArticuloPerros {
-  padding-top: 70px; 
-}
 .articulo{
-  height: 58vh;
-  overflow: auto;
+  padding-top: 3%;
+  min-height: 5vh; 
+}
+.articuloOculto1,.articuloOculto2,.articuloOculto3{
+  display: none;
 }
 .img-articulo{
+  text-align: center;
   height: 58vh;
 }
 .card-articulo{
@@ -84,4 +84,7 @@ footer{
 span{
   color: #aa0101;
   font-size: 80%;
+}
+form {
+  margin-bottom: 60px; 
 }
