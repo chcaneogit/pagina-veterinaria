@@ -77,8 +77,10 @@ header.innerHTML = `
 
 const footer = document.querySelector("footer"); // ESTO ES EL FOOTER
 footer.innerHTML = `
-<img class="logo-veterinaria img-thumbail" src="imagenes/logo-veterinaria.png">
+<div class="container-fluid">
+<img class="logo-veterinaria img-thumbail" src="imagenes/logo-veterinaria.png" >
 <a href="https://www.facebook.com"><i class="bi bi-facebook"></i></a>
 <a href="https://www.instagram.com"><i class="bi bi-instagram"></i></a>
 <a href="https://wa.me/56939635536"><i class="bi bi-whatsapp"></i></a>
+</div>
 `;
