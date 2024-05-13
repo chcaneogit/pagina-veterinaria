@@ -8,6 +8,8 @@
   <link href="style.css" rel="stylesheet">
   <link rel="icon" href="imagenes/logo-veterinaria.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="main.js"></script>
 </head>
 <body>
   <!-- Seccion barra de navegacion -->
@@ -84,82 +86,43 @@
  </div>
   <!-- Fin modal -->
 
-<!-- inicio Card de articulos-->
-<section class="row container-fluid">
-  <!-- Articulo cuidados -->
-  <div class="card container col-md-6 col-lg-2" style="width: 18rem ">
-    <img src="imagenes/gato1.jpg" class="img-fluid" alt="imagen cuidados">
-    <div class="card-body">
-      <h5 class="card-title">Cuidados para tu gato adulto</h5>
-      <p class="card-text card-articulo">Para aquellos que tienen la 
-fortuna de compartir su 
-hogar con un gato adulto, el 
-cuidado va más allá de las 
-tareas diarias; es una expresión de amor y compromiso hacia estos maravillosos compañeros felinos.</p>
-      <a href="#ArticuloGatoAdulto" class="btn btn-primary">Ir a cuidados</a>
-    </div>
-  </div>
-  <!-- Articulo gato sano -->
-  <div class="card container col-lg-2 col-md-6" style="width: 18rem ">
-    <img src="imagenes/gato2.jpg  " class="img-fluid" alt="imagen control">
-    <div class="card-body">
-      <h5 class="card-title">Control Sano</h5>
-      <p class="card-text card-articulo">Como veterinario, es crucial 
-educar a los dueños de gatos 
-sobre la importancia de los 
-controles regulares para 
-garantizar la salud y 
-el bienestar de sus mascotas felinas.</p>
-      <a href="#ArticuloGatoSano" class="btn btn-primary">Ir a gato sano</a>
-    </div>
-  </div>
-  <!-- Articulo perros -->
-  <div class="card container col-lg-2 col-md-6" style="width: 18rem ">
-    <img src="imagenes/datosperro.jpeg" class="img-fluid" alt="imagen datos perros">
-    <div class="card-body">
-      <h5 class="card-title">Datos para tu perro</h5>
-      <p class="card-text card-articulo"> Como veterinario 
-comprometido con el 
-bienestar de los perros y 
-sus dueños, es un honor 
-ofrecerte algunos consejos para una crianza responsable de estos adorables compañeros caninos.</p>
-      <a href="#ArticuloPerros" class="btn btn-primary">Ir a Perros</a>
-    </div>
-  </div>
-</section>
-<!--Fin card de articulos-->
-
 <!--Articulos de interes-->
 <section class="container">
   <div class="row">
-    <div class="col-md-6 articulo" id="ArticuloGatoAdulto">
+    <div class="col-md-12 articulo" >
       <h2>Cuidados para tu gato adulto</h2>
-      <p>
+      <p class="articulo">
         Para aquellos que tienen la fortuna de compartir su hogar con un gato adulto, el cuidado va más allá de las tareas diarias; es una expresión de amor y compromiso hacia estos maravillosos compañeros felinos.
-      </p>  
-        En primer lugar, la alimentación adecuada es fundamental para mantener a nuestro amigo felino sano y feliz. Como amantes de los gatos, comprendemos la importancia de proporcionarles una dieta equilibrada y de alta calidad, adaptada a sus necesidades específicas como adultos. Nos aseguramos de ofrecerles una variedad de alimentos sabrosos y nutritivos para mantener su vitalidad y salud a lo largo del tiempo.
-      <p>  
-        Además, como amantes de los gatos, disfrutamos dedicando tiempo a mantener la higiene de nuestro compañero peludo. No solo cepillamos su suave pelaje con delicadeza para eliminar los pelos sueltos y evitar las temidas bolas de pelo, sino que también nos encargamos de sus uñas, orejas y dientes con cuidado y dedicación.
-        
-        Entendemos que nuestros gatos necesitan más que comida y cuidados básicos; necesitan un entorno enriquecedor que estimule su curiosidad y les permita expresar su naturaleza juguetona y exploradora. Por eso, creamos un espacio en nuestro hogar lleno de juguetes interesantes, áreas de descanso acogedoras y lugares para trepar y observar su territorio con orgullo.
-      </p>  
-      <p> Como verdaderos amantes de los gatos, comprendemos la importancia de la atención médica preventiva. Programamos regularmente visitas al veterinario para chequeos de salud y vacunaciones, asegurándonos de que nuestros queridos compañeros estén protegidos y cuidados en todo momento.
-        
-        En resumen, cuidar de un gato adulto va más allá de las responsabilidades diarias; es un acto de amor y devoción hacia estos seres especiales que iluminan nuestras vidas con su presencia única y fascinante.
+
+        En primer lugar, la alimentación adecuada es fundamental para mantener a nuestro amigo felino sano y feliz. Como amantes de los gatos, comprendemos la importancia de proporcionarles una dieta equilibrada y de alta calidad, adaptada a sus necesidades específicas como adultos.
       </p>
+      <div class="articuloOculto1">
+      <p>Nos aseguramos de ofrecerles una variedad de alimentos sabrosos y nutritivos para mantener su vitalidad y salud a lo largo del tiempo.</p>
+
+      <P>Además, como amantes de los gatos, disfrutamos dedicando tiempo a mantener la higiene de nuestro compañero peludo. No solo cepillamos su suave pelaje con delicadeza para eliminar los pelos sueltos y evitar las temidas bolas de pelo, sino que también nos encargamos de sus uñas, orejas y dientes con cuidado y dedicación.</p>
+
+      <P>Entendemos que nuestros gatos necesitan más que comida y cuidados básicos; necesitan un entorno enriquecedor que estimule su curiosidad y les permita expresar su naturaleza juguetona y exploradora. Por eso, creamos un espacio en nuestro hogar lleno de juguetes interesantes, áreas de descanso acogedoras y lugares para trepar y observar su territorio con orgullo.</P>
+    
+      <P>Como verdaderos amantes de los gatos, comprendemos la importancia de la atención médica preventiva. Programamos regularmente visitas al veterinario para chequeos de salud y vacunaciones, asegurándonos de que nuestros queridos compañeros estén protegidos y cuidados en todo momento.</P>
+      
+      <P>En resumen, cuidar de un gato adulto va más allá de las responsabilidades diarias; es un acto de amor y devoción hacia estos seres especiales que iluminan nuestras vidas con su presencia única y fascinante.</P>
+      
+      </div>
+      <button id="verMas1" class="btn btn-success">Ver más</button>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-12">
       <img src="imagenes/gato1.jpg" class="img-fluid img-articulo" alt="Imagen del artículo cuidados">
     </div>
   </div>
+  
 </section>
-  <section>
-    <div class="container mt-8">
+<section class="container">
     <div class="row">
-      <div class="col-md-6 articulo" id="ArticuloGatoSano"  style="overflow: auto">
+      <div class="col-md-12 articulo">
         <h2>Controles al día</h2>
-        <p>Como veterinario, es crucial educar a los dueños de gatos sobre la importancia de los controles regulares para garantizar la salud y el bienestar de sus mascotas felinas. Los gatos son criaturas curiosas y a menudo ocultan signos de enfermedad, lo que hace que los chequeos regulares sean aún más importantes. Aquí hay una visión general de los controles que recomiendo para mantener a los gatos al día y saludables:
-
+        <p class="articulo">Como veterinario, es crucial educar a los dueños de gatos sobre la importancia de los controles regulares para garantizar la salud y el bienestar de sus mascotas felinas. Los gatos son criaturas curiosas y a menudo ocultan signos de enfermedad, lo que hace que los chequeos regulares sean aún más importantes. Aquí hay una visión general de los controles que recomiendo para mantener a los gatos al día y saludables:
+        </p>
+        <div class="articuloOculto2"></p>
         <p> 1. Exámenes físicos regulares: Los exámenes físicos son fundamentales para detectar cualquier problema de salud temprano. Durante estos exámenes, evalúo el peso corporal, la condición de la piel y el pelaje, el estado de los ojos y oídos, así como la salud dental y la condición general del gato. También aprovecho para discutir la dieta, el ejercicio y el comportamiento del gato con el propietario.
         </p> 
         <p> 2. Vacunaciones: Las vacunas son una parte esencial del cuidado preventivo de los gatos. Recomiendo un plan de vacunación personalizado basado en el estilo de vida del gato y los riesgos específicos a los que está expuesto. Las vacunas comunes para gatos incluyen las vacunas contra la rabia, la panleucopenia felina, el calicivirus felino y el herpesvirus felino.
@@ -172,42 +135,45 @@ ofrecerte algunos consejos para una crianza responsable de estos adorables compa
         </p>  
         <p> En resumen, los controles regulares son fundamentales para mantener a los gatos al día y saludables. Como veterinario, estoy comprometido a proporcionar la mejor atención posible para mis pacientes felinos, y alentar a los propietarios a ser proactivos en el cuidado de la salud de sus adoradas mascotas. Al realizar controles regulares y seguir un plan de cuidado preventivo, podemos garantizar una vida larga y feliz para nuestros amigos felinos.
         </p>
-        </p>
+        </div>
+        <button id="verMas2" class="btn btn-success">Ver más</button>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-12">
         <img src="imagenes/gato2.jpg" class="img-fluid img-articulo" alt="Imagen del artículo control">
         
       </div>
     </div>
-  </section>
-    <section>
-      <div class="container mt-8">
-      <div class="row">
-        <div class="col-md-6 articulo" id="ArticuloPerros">
-          <h2>Datos que debes saber sobre tu perro</h2>
-          <p>
-            Como veterinario comprometido con el bienestar de los perros y sus dueños, es un honor ofrecerte algunos consejos para una crianza responsable de estos adorables compañeros caninos.
-          </p> 
-          <p>Proporciona atención veterinaria regular: La salud de tu perro es una prioridad. Programa visitas regulares al veterinario para chequeos de salud, vacunaciones y tratamientos preventivos contra parásitos. Estos controles son fundamentales para detectar problemas de salud temprano y garantizar que tu perro tenga una vida larga y saludable.
-          </p>   
-          <p> Alimentación adecuada y equilibrada: La dieta de tu perro juega un papel crucial en su salud y bienestar. Elije alimentos de alta calidad y adecuados para su edad, tamaño y nivel de actividad. Evita los alimentos procesados y asegúrate de proporcionarle agua fresca y limpia en todo momento.
-          </p>   
-          <p> Ejercicio regular y estimulación mental: Los perros necesitan ejercicio diario para mantenerse física y mentalmente saludables. Proporciona paseos regulares, tiempo de juego y actividades de enriquecimiento para mantener a tu perro activo y feliz. Esto no solo fortalece su cuerpo, sino que también previene el aburrimiento y el comportamiento no deseado.
-          </p>  
-          <p> Entrenamiento y socialización: La educación temprana es esencial para criar un perro bien educado y equilibrado. Dedica tiempo al entrenamiento de obediencia y socialización desde una edad temprana. Esto ayudará a tu perro a desarrollar habilidades sociales adecuadas y a establecer una relación sólida contigo y con otros perros.
-          </p>   
-          <p> Ambiente seguro y cómodo: Crea un ambiente seguro y cómodo para tu perro en tu hogar. Proporciona un espacio tranquilo para descansar y dormir, así como juguetes y actividades adecuadas para mantenerlo entretenido. Mantén tu hogar libre de peligros y asegúrate de que tu perro tenga acceso a refugio y protección contra condiciones climáticas adversas.
-          </p>   
-          <p> Amor y cuidado constante: Finalmente, brinda a tu perro el amor y el cuidado que se merece. Dedica tiempo de calidad con él, demuéstrale afecto y establece una rutina de cuidado diario. Tu amor y atención son fundamentales para su felicidad y bienestar general.
-          </p>   
-          <p> Siguiendo estos consejos de crianza responsable, estarás creando un ambiente óptimo para el desarrollo y la felicidad de tu perro, fortaleciendo así el vínculo especial que compartes con tu fiel compañero canino.
-          </p>
-        </div>
-        <div class="col-md-6">
-          <img src="imagenes/datosperro.jpeg" class="img-fluid img-articulo" alt="Imagen del artículo perros">
-        </div>
+</section>
+<section class="container">
+  <div class="row">
+    <div class="col-md-12 articulo">
+      <h2>Datos que debes saber sobre tu perro</h2>
+      <p class="articulo">
+        Como veterinario comprometido con el bienestar de los perros y sus dueños, es un honor ofrecertalgunos consejos para una crianza responsable de estos adorables compañeros caninos.
+      </p> 
+      <p>Proporciona atención veterinaria regular: La salud de tu perro es una prioridad. Programa visitaregulares al veterinario para chequeos de salud, vacunaciones y tratamientos preventivos contrparásitos. Estos controles son fundamentales para detectar problemas de salud temprano y garantizar qutu perro tenga una vida larga y saludable.
+      </p>
+      <div class="articuloOculto3">  
+        <p> Alimentación adecuada y equilibrada: La dieta de tu perro juega un papel crucial en su salud bienestar. Elije alimentos de alta calidad y adecuados para su edad, tamaño y nivel de actividad. Evitlos alimentos procesados y asegúrate de proporcionarle agua fresca y limpia en todo momento.
+        </p>   
+        <p> Ejercicio regular y estimulación mental: Los perros necesitan ejercicio diario para mantenersfísica y mentalmente saludables. Proporciona paseos regulares, tiempo de juego y actividades denriquecimiento para mantener a tu perro activo y feliz. Esto no solo fortalece su cuerpo, sino qutambién previene el aburrimiento y el comportamiento no deseado.
+        </p>  
+        <p> Entrenamiento y socialización: La educación temprana es esencial para criar un perro bien educado equilibrado. Dedica tiempo al entrenamiento de obediencia y socialización desde una edad temprana. Estayudará a tu perro a desarrollar habilidades sociales adecuadas y a establecer una relación sólidcontigo y con otros perros.
+        </p>   
+        <p> Ambiente seguro y cómodo: Crea un ambiente seguro y cómodo para tu perro en tu hogar. Proporcionun espacio tranquilo para descansar y dormir, así como juguetes y actividades adecuadas para mantenerlentretenido. Mantén tu hogar libre de peligros y asegúrate de que tu perro tenga acceso a refugio protección contra condiciones climáticas adversas.
+        </p>   
+        <p> Amor y cuidado constante: Finalmente, brinda a tu perro el amor y el cuidado que se merece. Dedictiempo de calidad con él, demuéstrale afecto y establece una rutina de cuidado diario. Tu amor atención son fundamentales para su felicidad y bienestar general.
+        </p>   
+        <p> Siguiendo estos consejos de crianza responsable, estarás creando un ambiente óptimo para edesarrollo y la felicidad de tu perro, fortaleciendo así el vínculo especial que compartes con tu fiecompañero canino.
+        </p>
       </div>
-    </section> 
+      <button id="verMas3" class="btn btn-success">Ver más</button>
+    </div>
+    <div class="col-md-12">
+      <img src="imagenes/datosperro.jpeg" class="img-fluid img-articulo" alt="Imagen del artículo perros">
+    </div>
+  </div>
+</section> 
 <!--Fin Articulos de interes-->
 
 <!--Popover -->
@@ -215,7 +181,7 @@ ofrecerte algunos consejos para una crianza responsable de estos adorables compa
   Importante
 </button>
 <!-- Fin popover  -->
-<footer class="container-fluid"">
+<footer class="container-fluid fixed-bottom">
   <img class="logo-veterinaria img-thumbail" src="imagenes/logo-veterinaria.png">
   <a href="https://www.facebook.com"><i class="bi bi-facebook"></i></a>
   <a href="https://www.instagram.com"><i class="bi bi-instagram"></i></a>
