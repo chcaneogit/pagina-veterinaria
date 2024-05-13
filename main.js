@@ -1,3 +1,25 @@
+document.addEventListener('DOMContentLoaded', function () {
+    var searchInput = document.querySelector('input[name="direccion"]');
+    var autocomplete = new google.maps.places.Autocomplete(searchInput, { 
+        types: ['geocode'],
+        componentRestrictions: { country: 'cl' }
+    }); 
+
+    autocomplete.addListener('place_changed', function () { 
+        var near_place = autocomplete.getPlace();
+    });
+
+    searchInput.addEventListener('keydown', function(event) {
+        if (event.key === "Enter") {
+            event.preventDefault(); 
+            var place = autocomplete.getPlace();
+            if (place && place.formatted_address) {
+                searchInput.value = place.formatted_address;
+            }
+        }
+    });
+});
+
 function validarTexto(idCampo) {
     let nombreInput = document.getElementById(idCampo);
     let nombre = nombreInput.value;
@@ -192,3 +214,5 @@ $(document).ready(function(){
       }
     });
 });
+
+
