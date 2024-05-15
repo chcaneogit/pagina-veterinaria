@@ -9,83 +9,15 @@
   <link rel="icon" href="imagenes/logo-veterinaria.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBz_01h8WG7BVd8afk9hSIrJsoPKtLN5Vw&libraries=places&callback=initMap"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="main.js"></script>
 
 </head>
 <body>
   <!-- Seccion barra de navegacion -->
-  <nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-veterinaria" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbar-veterinaria">
-        <a class="navbar-brand" href="index.html"><img class="logo-veterinaria img-fluid" src="imagenes/logo-veterinaria.png" alt="Logo de veterinaria">Inicio</a>
-        <ul class="navbar-nav ">
-          <li class="nav-item">
-            <a class="nav-link" href="servicios.html">Servicios</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="productos.html">Productos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="articulos.html">Articulos</a>
-          </li>
-          <li class="nav-item"> 
-            <a class="nav-link" href="carro.html">Carrito</a>
-          </li>
-          <li class="nav-item">
-          <li class="nav-item">
-              <!-- Botón de Iniciar Sesión con Modal -->
-            <button type="button" class="btn btn-link nav-link" data-bs-toggle="modal" data-bs-target="#loginModal">
-              Iniciar Sesión
-            </button>
-            <!-- Fin del Botón de Iniciar Sesión con Modal -->
-            </li>
-          </ul>
-        </div>
-      </div>
-  </nav>
-  <!-- FIn barra de navegacion-->
- <!-- Modal de Inicio de Sesión -->
- <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="loginModalLabel">Inicio de Sesión</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      
-      
-      <div class="modal-body">
-        <form class="was-validated">
-          <div class="col-md-8">
-            <label for="validationCustomUsername" class="form-label">Nombre Usuario</label>
-            <div class="input-group has-validation"> 
-              <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
-              <div class="invalid-feedback">
-                Introduzca nombre de usuario.
-              </div>
-            </div>
-          </div>
-          <div class="col-md-8">
-            <label for="validationCustomUsername" class="form-label">Contraseña</label>
-            <div class="input-group has-validation">
-              <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
-              <div class="invalid-feedback">
-                Instroduzca la contraseña.
-              </div>
-            </div>
-          </div>
-          <br>
-          <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
-          <a href="registro.html" button type="submit" class="btn btn-primary">Registrase</button></a>
-        </form>
-      </div>
-    </div>
-  </div>
- </div>
-  <!-- Fin modal -->
+  <header>
+      <!--Se encuentra en main.js-->
+  </header>
 
   <!-- Inicio sección de registro -->
   <section class="container">
@@ -167,12 +99,9 @@
     Importante
   </button>
   <!-- Fin popover  -->
-  <footer class="container-fluid fixed-bottom">
-    <img class="logo-veterinaria img-thumbail" src="imagenes/logo-veterinaria.png">
-    <a href="https://www.facebook.com"><i class="bi bi-facebook"></i></a>
-    <a href="https://www.instagram.com"><i class="bi bi-instagram"></i></a>
-    <a href="https://wa.me/56939635536"><i class="bi bi-whatsapp"></i></a>
-  </footer>
+    <footer>
+    <!--Se encuentra en main.js-->
+    </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <!-- script para habilitar los popover -->
   <script>
@@ -181,6 +110,7 @@
       const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
     });
   </script>
+
 
 </body>
 
