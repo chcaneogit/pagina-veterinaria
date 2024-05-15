@@ -282,7 +282,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 </div>
                 <br>
                 <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
-                <a href="registro.html" button type="submit" class="btn btn-primary">Registrase</button></a>
+                <a href="registro.html" button type="submit" class="btn btn-primary">Registrarse</button></a>
               </form>
             </div>
           </div>
